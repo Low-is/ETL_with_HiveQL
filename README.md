@@ -14,7 +14,7 @@ Using a Dockerized big data environment (based on the big-data-europe/docker-hiv
 4. Ran analytical queries (e.g., variant counts per gene) to simulate downstream interpretation workflows.
 
 Key Technologies being used:
-1. Docker + Docker Compose – for running Hadoop and Hive services.
+1. Docker + [Docker Compose](https://github.com/big-data-europe/docker-hive/blob/master/docker-compose.yml) – for running Hadoop and Hive services.
 2. Apache Hive – for scalable SQL-based analysis of tabular variant data.
 3. Hadoop (HDFS) – for distributed storage of large datasets.
 4. Python (Pandas) – to simulate realistic variant data.
