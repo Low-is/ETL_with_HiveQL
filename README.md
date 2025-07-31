@@ -25,6 +25,8 @@ ETL stands for Extract, Transform, Load, which is a process used to move data fr
         2. Incrementally (only new/updated data)
 
 
+
+
 Using a Dockerized big data environment (based on the big-data-europe/docker-hive stack), the following is performed:
 
 1. Simulated genomic variant data for 1000+ variants across 200 samples and multiple genes.
