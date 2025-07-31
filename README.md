@@ -1,7 +1,12 @@
 # ETL Project with HiveQL: Simulated Variant Data Warehouse
 Simulate ingestion of genomic variant data from CSV files --> transform and standardize --> load into Hive tables --> run analytical queries using HiveQL
 
+## Project Summary
 This project demonstrates an end-to-end ETL workflow for genomic variant data using Hive on Hadoop, simulating a real-world bioinformatics data engineering scenario.
+
+Variant interpretation refers to the process of analyzing DNA sequence changes (variants) to determine their potential clinical significance. According to the standards and guidelines established by the American College of Medical Genetics and Genomics (ACMG), variants are are classified into five categories: pathogenic, likely pathogenic, uncertain significance, likely benign, and benign ([RICHARDS et al., 2015](https://www.acmg.net/docs/Standards_Guidelines_for_the_Interpretation_of_Sequence_Variants.pdf)).
+
+
 
 Using a Dockerized big data environment (based on the big-data-europe/docker-hive stack), the following is performed:
 
