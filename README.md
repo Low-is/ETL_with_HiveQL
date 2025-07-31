@@ -38,7 +38,7 @@ docker-compose up -d
 
 ```
 # Access the Hive CLI (Beeline)
-docker exec -it hiver-server /bin/bash
+docker exec -it hive-server /bin/bash
 ```
 
 ```
