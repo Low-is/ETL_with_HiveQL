@@ -1,5 +1,5 @@
 # ETL Project with HiveQL: Simulated Variant Data Warehouse
-Simulate ingestion of genomic variant data from CSV files --> transform and standardize --> load into Hive tables --> run analytical queries using HiveQL
+Simulate ingestion of genomic variant data from CSV files (structured data) --> transform and standardize --> load into Hive tables --> run analytical queries using HiveQL
 
 ## Project Summary
 This project demonstrates an end-to-end ETL workflow for genomic variant data using Hive on Hadoop, simulating a real-world bioinformatics data engineering scenario.
