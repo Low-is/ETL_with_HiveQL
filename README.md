@@ -39,9 +39,31 @@ docker-compose up -d
 ```
 
 ```
+# Once inside the container, create directory for files into container's HDFS (Hadoop Distribution File System):
+hdfs dfs -mkdir -p /user/hive/warehouse/variants
+```
+
+```
+# Copy files into container's HDFS:
+hdfs cp C:\Users\RANDOLPHL\ETL_project\variants_simulated.csv hive-server:/variants_simulated.csv
+```
+
+```
 # Access the Hive CLI (Beeline)
 docker exec -it hive-server /bin/bash
 ```
+
+```
+# Create new directory into HDFS from inside the container
+hdfs dfs -mkdir -p /user/hive/warehouse/variants
+```
+
+
+```
+# Load files into HDFS from inside the container
+hdfs dfs -put /variants_simulated.csv /user/hive/warehouse/variants/
+```
+
 
 ```
 # Start Beeline (Hive CLI):
@@ -51,8 +73,4 @@ beeline -u jdbc://localhost:1000
 ```
 # After starting the Beeline (Hive CLI), the following prompt will appear as:
 # 0:jdbchive2://localhost:10000>
-```
-
-```
-# Once inside
 ```
