@@ -4,8 +4,25 @@ Simulate ingestion of genomic variant data from CSV files --> transform and stan
 ## Project Summary
 This project demonstrates an end-to-end ETL workflow for genomic variant data using Hive on Hadoop, simulating a real-world bioinformatics data engineering scenario.
 
-Variant interpretation refers to the process of analyzing DNA sequence changes (variants) to determine their potential clinical significance. According to the standards and guidelines established by the American College of Medical Genetics and Genomics (ACMG), variants are are classified into five categories: pathogenic, likely pathogenic, uncertain significance, likely benign, and benign ([RICHARDS et al., 2015](https://www.acmg.net/docs/Standards_Guidelines_for_the_Interpretation_of_Sequence_Variants.pdf)).
+Variant interpretation refers to the process of analyzing DNA sequence changes (variants) to determine their potential clinical significance. According to the standards and guidelines established by the American College of Medical Genetics and Genomics (ACMG), variants are classified into five categories: pathogenic, likely pathogenic, uncertain significance, likely benign, and benign ([RICHARDS et al., 2015](https://www.acmg.net/docs/Standards_Guidelines_for_the_Interpretation_of_Sequence_Variants.pdf)). 
 
+ETL stands for Extract, Transform, Load, which is a process used to move data from various sources into centralized system, like a data warehouse or data lake, in a usable format. 
+- Extract:
+    - Pull data from multiple sources: databases, flat files (CSV, JSON), APIs, cloud storage, etc.
+    - Sources can be structured (SQL databases), semi-structured (XML, JSON), or unstructured (text, images).
+- Transform:
+    - Clean, enrich, and convert data into a consistent format.
+    - Typical transformations include:
+        1. Removing duplicates
+        2. Standardizing data/time formats
+        3. Joining datasets
+        4. Filtering irrelevant rows
+        5. Calculating new metrics or columns
+- Load:
+    - Move the transformed data into a destination system, often a data warehouse like Snowflake, BigQuery, or Amazon Redshift.
+    - Data can be loaded:
+        1. All at once (batch load)
+        2. Incrementally (only new/updated data)
 
 
 Using a Dockerized big data environment (based on the big-data-europe/docker-hive stack), the following is performed:
