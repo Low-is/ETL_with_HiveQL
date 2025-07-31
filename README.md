@@ -18,3 +18,30 @@ Key Technologies being used:
 2. Apache Hive – for scalable SQL-based analysis of tabular variant data.
 3. Hadoop (HDFS) – for distributed storage of large datasets.
 4. Python (Pandas) – to simulate realistic variant data.
+
+
+Quick workflow:
+Download docker-compose.yml file (refer to above link) from Big Data Europe's GitHub repo. 
+
+Open your command prompt or Windows Powershell:
+```
+# Move into directory containing docker-compes.yml file (Windows PowerShell example)
+PS C:\Users\RANDOLPHL cd path\to\file
+
+# Once inside directory where docker-compose.yml file lives, type the following to start the stack:
+# This will start:
+# PostgreSQL as Hive Metastore DB
+# Hive Metastore service
+# Hiveserver2 service
+docker-compose up -d
+
+# Access the Hive CLI (Beeline)
+docker exec -it hiver-server /bin/bash
+
+# Start Beeline (Hive CLI):
+beeline -u jdbc://localhost:1000
+
+# After starting the Beeline (Hive CLI), the following prompt will appear as:
+# 0:jdbchive2://localhost:10000>
+
+```
