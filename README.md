@@ -27,7 +27,9 @@ Open your command prompt or Windows Powershell:
 ```
 # Move into directory containing docker-compes.yml file (Windows PowerShell example)
 PS C:\Users\RANDOLPHL cd path\to\file
+```
 
+```
 # Once inside directory where docker-compose.yml file lives, type the following to start the stack:
 # This will start:
 # PostgreSQL as Hive Metastore DB
