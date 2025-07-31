@@ -39,11 +39,6 @@ docker-compose up -d
 ```
 
 ```
-# Once inside the container, create directory for files into container's HDFS (Hadoop Distribution File System):
-hdfs dfs -mkdir -p /user/hive/warehouse/variants
-```
-
-```
 # Copy files into container's HDFS:
 hdfs cp C:\Users\RANDOLPHL\ETL_project\variants_simulated.csv hive-server:/variants_simulated.csv
 ```
@@ -53,8 +48,9 @@ hdfs cp C:\Users\RANDOLPHL\ETL_project\variants_simulated.csv hive-server:/varia
 docker exec -it hive-server /bin/bash
 ```
 
+
 ```
-# Create new directory into HDFS from inside the container
+# Once inside the container, create directory for files into container's HDFS (Hadoop Distribution File System):
 hdfs dfs -mkdir -p /user/hive/warehouse/variants
 ```
 
