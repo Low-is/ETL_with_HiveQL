@@ -52,3 +52,7 @@ beeline -u jdbc://localhost:1000
 # After starting the Beeline (Hive CLI), the following prompt will appear as:
 # 0:jdbchive2://localhost:10000>
 ```
+
+```
+# Once inside
+```
