@@ -39,7 +39,7 @@ docker-compose up -d
 ```
 
 ```
-# Copy files into container's HDFS:
+# From local machine, copy variant file inside Hive container:
 hdfs cp C:\Users\RANDOLPHL\ETL_project\variants_simulated.csv hive-server:/variants_simulated.csv
 ```
 
