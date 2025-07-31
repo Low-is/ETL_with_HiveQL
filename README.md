@@ -34,14 +34,19 @@ PS C:\Users\RANDOLPHL cd path\to\file
 # Hive Metastore service
 # Hiveserver2 service
 docker-compose up -d
+```
 
+```
 # Access the Hive CLI (Beeline)
 docker exec -it hiver-server /bin/bash
+```
 
+```
 # Start Beeline (Hive CLI):
 beeline -u jdbc://localhost:1000
+```
 
+```
 # After starting the Beeline (Hive CLI), the following prompt will appear as:
 # 0:jdbchive2://localhost:10000>
-
 ```
